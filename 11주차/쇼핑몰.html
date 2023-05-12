@@ -3,30 +3,64 @@
     <head>
         <meta charset="utf-8">
         <style>
-
+            * {
+                margin: 0;
+                padding:0;
+            }
+            ul {
+                list-style-type: none;
+            }
+            #main_title {
+                margin: 10px;
+                padding-bottom: 6px;
+                border-bottom: solid 2px #aaaaaaa;
+            }
+            .list_item {
+                clear: both;
+                height: 130px;
+                margin: 10px;
+                border-bottom: solid 1px #cccccc;
+            }
+            .image {
+                float:left;
+                width:100px;
+            }
+            .intro {
+                float:left;
+                width:300px;
+                margin-left: 20px;;
+            }
+            .price {
+                float:left;
+                width:150px;
+            }
+            .red {
+                font-weight: bold;
+                color: red;
+            }
+            .small {
+                font-size: 12px;
+                margin-top: 5px;
+            }
+            .writer {
+                float:left;
+                width: 100px;
+            }
         </style>
     </head>
 
 
-
-
-
-
-
-
-
-
     <body>
-        <h3><b>판매 도서&문구 목록</b></h3>
-        <div><img src='만화책.jpg'></div>
-        <div>[그 비스크 돌은 사랑을 한다]1-9권 세트</div>
-        <ul>
-            <li>44,550원</li>
-            <li>배송비 3,000원</li>
-        </ul>
-
-
-
+        <h3 id="main_title"><b>판매 도서&문구 목록</b></h3>
+        <div class="list_item">
+                <div class='image'><img src='마린책.jpg'></div>
+                <div class="intro"><b>[그 비스크 돌은 사랑을 한다]1-9권 세트</b></div>
+                <ul class="price">
+                    <li class="red">44,550원</li>
+                    <li class="small">배송비 3,000원</li>
+                </ul>
+                <div class="writer">소미 미디어</div>
+        </div>
 
     </body>
 </html>
