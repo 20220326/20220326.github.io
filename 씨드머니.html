@@ -20,14 +20,15 @@
             clear: both;
         }
         header {
-          
+           text-align: center;
             height: 100px;
-           
+            margin: 0 auto;
             background-color:mediumaquamarine;
                 padding: 30px;
                 color: white;
             /* border:solid 1px red; */
         }
+        
         h1 {
             color: white;
             text-align: center;
@@ -74,7 +75,7 @@
             margin-top: 20px;
         }
         #contents {
-            width: 1140px;
+            width: 1000px;
             margin: 0 auto;
         }
         #sub_menu {
@@ -96,7 +97,7 @@
         }
         #main_contents {
             width: 880px;
-            float: right;
+            float: left;
             margin-top: 25px;
             /* border:solid 1px red; */
         }
@@ -115,7 +116,28 @@
         #main_contents li {
             padding: 5px;
         }
-        
+      ul {
+        width: 800px;
+        padding:20px;
+      }
+    li {
+        list-style-type: none;
+        display: flex;
+        margin-left: 10px;
+    }
+    .image-container {
+        display: flex;
+    }
+    .image-container img {
+        width: auto;
+        height: 200px;
+        margin-right: 10px;
+    }
+    .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
         </style>
        
     </head>
@@ -132,13 +154,15 @@
                     로그인 ㅣ 회원가입 ㅣ I/D패스워드 찾기
                 </div>
                 <ul id="main_menu">
-                    <li></li>
-                <li>고3/N수생</li>
-                <li>공시생</li>
-                <li>자기개발/원데이클래스</li>
-                <li>씨드머니</li>
-                <li>이벤트</li>
-                <li>교재쇼핑</li>
+                    
+                         <li>고3/N수생</li>
+                            <li>공시생</li>
+                            <li>자기개발/원데이클래스</li>
+                            <li>씨드머니</li>
+                            <li>이벤트</li>
+                            <li>교재쇼핑</li></h1>
+                      
+               
                 </ul>
             </nav>
         </header>
@@ -152,19 +176,25 @@
                
             </div>
         </section>
-        <img src="머니.png" width="900" height="400">
-        <img src="유료.png" width="800" height="400"> <img src="지급.png" width="800" height="400">
+        <div class="image-container">
+            <img src="머니.png" alt="머니">
+            <img src="유료.png" alt="유료">
+            <img src="지급.png" alt="지급">
+          </div>
+          
             <h1>유료회원가입</h1>
-            <form>
-                성함:<input type="text"><br><br>
-                성별:<input type="checkbox">남성<input type="radio">여성<br><br>
-                직업:<input type="checkbox">학생<input type="radio">취준생<input type="radio">취미<br><br>
-                아이디:<input type="text"><br><br>
-                비밀번호:<input type="password">
-            </form>
-            <form>
-                <button type="button">가입하기</button> 
-            </form>
+            <div class="form-container">
+                <form>
+                    성함:<input type="text"><br><br>
+                    성별:<input type="checkbox">남성<input type="radio">여성<br><br>
+                    직업:<input type="checkbox">학생<input type="radio">취준생<input type="radio">취미<br><br>
+                    아이디:<input type="text"><br><br>
+                    비밀번호:<input type="password">
+                    <input type="submit" value="가입하기">
+                </form>
+              </div>
+           
+           
       <div class="clear"></div> <!--foat 속성 해제-->
        
       
